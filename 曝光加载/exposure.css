@@ -1,0 +1,26 @@
+.clearfix::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+ul{
+	border: 1px solid;
+	width: 500px;
+	margin: 0 auto;
+}
+ul,li{
+	list-style: none;
+
+}
+li{
+	float: left;
+}
+li a{
+	text-decoration: none;
+}
+
+li img{
+	width: 200px;
+	height: 116px;
+	margin: 10px;
+}

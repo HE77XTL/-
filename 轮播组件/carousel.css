@@ -1,0 +1,86 @@
+*{
+	box-sizing: border-box;
+}
+ul,li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.carousel{
+	position: relative;
+	width: 400px;
+	height: 300px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.img-ct{
+	position: absolute;
+	left:-400px;
+}
+
+.img-ct >li {
+	width: 400px;
+	float: left;
+}
+.img-ct img{
+	width: 400px;
+}
+
+.btn{
+	width: 30px;
+	height: 30px;
+	background: #ccc;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-decoration: none;
+	text-align: center;
+	line-height: 26px;
+	color: #fff;
+	opacity: 0.7;
+}
+
+.pre{
+	left: 10px;
+}
+.next{
+	right: 10px;
+}
+
+.bullet-ct{
+	position: relative;
+	top: 286px;
+/*	width: 200px;
+	height: 20px;
+	text-align: center;*/
+}
+.bullet{
+	width: 160px;
+	height: 20px;
+	margin: 0 auto;
+	opacity: 0.7;
+}
+.bullet>li{
+	width: 40px;
+	height: 10px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	float: left;
+	text-align: center;
+	border-left: none;
+	cursor: pointer;
+}
+.bullet>li:first-child{
+	border: 1px solid #ccc;
+}
+.bullet>li[class="active"]{
+	background: #ccc;
+}
